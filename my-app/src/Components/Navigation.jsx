@@ -13,8 +13,9 @@ function Navigation(props) {
           <div>
             <ul class="navbar-nav ml-auto">
               <li
+            //   if pathname matches link, it adds the active class for bootstrap element
                 class={`nav-item  ${
-                  props.location.pathname === "/" ? "active" : ""
+                  props.location.pathname === "/" ? "active" : "" 
                 }`}
               >
                 <Link class="nav-link" to="/">
